@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/nurbsproject_java/!svn/ver/23/01_BSplinesDemo/src/at/runaway/splinedemo/ui/panels
+END
+PropertiesJPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 108
+/svn/nurbsproject_java/!svn/ver/23/01_BSplinesDemo/src/at/runaway/splinedemo/ui/panels/PropertiesJPanel.java
+END
+ButtonJPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 104
+/svn/nurbsproject_java/!svn/ver/23/01_BSplinesDemo/src/at/runaway/splinedemo/ui/panels/ButtonJPanel.java
+END
+KnotInfoJPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/nurbsproject_java/!svn/ver/23/01_BSplinesDemo/src/at/runaway/splinedemo/ui/panels/KnotInfoJPanel.java
+END
+CurveInfoJPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 107
+/svn/nurbsproject_java/!svn/ver/23/01_BSplinesDemo/src/at/runaway/splinedemo/ui/panels/CurveInfoJPanel.java
+END
+BasisFunctionJPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 111
+/svn/nurbsproject_java/!svn/ver/23/01_BSplinesDemo/src/at/runaway/splinedemo/ui/panels/BasisFunctionJPanel.java
+END
+AbstractAreaJPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/nurbsproject_java/!svn/ver/23/01_BSplinesDemo/src/at/runaway/splinedemo/ui/panels/AbstractAreaJPanel.java
+END
+FittingAreaJPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/nurbsproject_java/!svn/ver/28/01_BSplinesDemo/src/at/runaway/splinedemo/ui/panels/FittingAreaJPanel.java
+END
+FittingInfoJPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 109
+/svn/nurbsproject_java/!svn/ver/23/01_BSplinesDemo/src/at/runaway/splinedemo/ui/panels/FittingInfoJPanel.java
+END
+PaintingAreaJPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 110
+/svn/nurbsproject_java/!svn/ver/23/01_BSplinesDemo/src/at/runaway/splinedemo/ui/panels/PaintingAreaJPanel.java
+END
+AbstractJPanel.java
+K 25
+svn:wc:ra_dav:version-url
+V 106
+/svn/nurbsproject_java/!svn/ver/23/01_BSplinesDemo/src/at/runaway/splinedemo/ui/panels/AbstractJPanel.java
+END

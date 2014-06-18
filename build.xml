@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<project default="all" basedir="." name="Build NURBS Demo">
+
+	<!-- ************************************************ -->
+	<!-- properties                                       -->
+	<!-- ************************************************ -->
+	<property name="src" value="src"/>
+	<property name="test" value="test"/>
+	<property name="build" value="build"/>
+	<property name="dist" value="dist"/> 
+	<property name="project" value="bsplines"/> 
+	
+	<property name="version" value="1.0.0"/> 
+	
+	<!-- ************************************************ -->
+	<!-- do all                                           -->
+	<!-- ************************************************ -->
+	<target name="all" depends="init, compile, create_jar"/>
+		
+	<!-- ************************************************ -->
+	<!-- initialize files and directories                 -->
+	<!-- ************************************************ -->
+	<target name="init">
+		<delete dir="${build}"/>
+		<mkdir dir="${build}"/>
+		<delete dir="${dist}"/>
+		<mkdir dir="${dist}"/>
+		<tstamp/>
+	</target>
+
+	<!-- ************************************************ -->
+	<!-- compile source code                              -->
+	<!-- ************************************************ -->
+	<target name="compile"> 
+		<javac srcdir="${src}" destdir="${build}" debug="on"/> 
+	</target> 
+
+	<!-- ************************************************ -->
+	<!-- create jar file                                  -->
+	<!-- ************************************************ -->
+	<target name="create_jar">
+		<jar jarfile="${dist}/${project}.jar" basedir="${build}"> 
+			<manifest> 
+				<attribute name="Main-Class" value="at.runaway.splinedemo.SplinesStarter"/> 
+    			<attribute name="Built-By" value="${user.name}"/>
+    			<section name="common">
+      				<attribute name="Specification-Title" value="BSplines Demo Application"/>
+			      	<attribute name="Specification-Version" value="${version}"/>
+			      	<attribute name="Specification-Vendor" value="Christian Luger, Christof Koechli"/>
+			      	<attribute name="Implementation-Title" value="BSplines Demo Application"/>
+			      	<attribute name="Implementation-Version" value="${version} [${TODAY}]"/> 
+			      	<attribute name="Implementation-Vendor" value="Christian Luger, Christof Koechli"/>
+    			</section>
+			</manifest> 
+ 		</jar>
+		<copy file="readme.txt" todir="${dist}"/>
+		<copydir dest="${dist}/source" src="${src}"/>
+		<copydir dest="${dist}/testcode" src="${test}"/>
+		<zip destfile="${dist}/${project}.zip" basedir="${dist}" excludes="*.zip"/>
+		<delete dir="${build}"/>
+		<delete dir="${dist}/testcode"/>
+		<delete dir="${dist}/source"/>
+	</target>
+  
+</project>
